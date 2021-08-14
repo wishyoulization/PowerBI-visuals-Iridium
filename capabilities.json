@@ -1,0 +1,46 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Data",
+      "name": "data",
+      "kind": "GroupingOrMeasure"
+    }
+  ],
+  "objects": {
+    "chartSettings": {
+      "displayName": "Params",
+      "properties": {
+        "params": {
+          "displayName": "Params",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    }
+  },
+  "advancedEditModeSupport": 1,
+  "tooltips": {
+      "supportedTypes": {
+          "default": true,
+          "canvas": true
+      },
+      "roles": [
+          "tooltips"
+      ]
+  },
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          },
+          "select": [{ "for": { "in": "data" } }]
+        }
+      }
+    }
+  ]
+}
