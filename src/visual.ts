@@ -68,7 +68,7 @@ export class Visual implements IVisual {
       this.settings.chartSettings.params || "[]"
     );
     this.Iridium.get_recent = () => {
-      return "Custom Visual";
+      return "";
     };
     this.Iridium.set_recent = () => {
       return true;
