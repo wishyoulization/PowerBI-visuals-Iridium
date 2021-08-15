@@ -7,6 +7,28 @@
     }
   ],
   "objects": {
+    "general": {
+      "displayName": "General",
+      "properties": {
+        "persist": {
+          "type": {
+            "text": true
+          }
+        },
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        },
+        "selfFilter": {
+          "type": {
+            "filter": {
+              "selfFilter": true
+            }
+          }
+        }
+      }
+    },
     "chartSettings": {
       "displayName": "Params",
       "properties": {
@@ -21,13 +43,11 @@
   },
   "advancedEditModeSupport": 1,
   "tooltips": {
-      "supportedTypes": {
-          "default": true,
-          "canvas": true
-      },
-      "roles": [
-          "tooltips"
-      ]
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": ["tooltips"]
   },
   "dataViewMappings": [
     {
